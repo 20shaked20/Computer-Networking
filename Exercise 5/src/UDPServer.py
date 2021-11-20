@@ -2,7 +2,7 @@ from socket import *
 
 serverPort = 12000
 SERVER_ADDRESS = ('', serverPort)
-serverSocket = socket(AF_INET, SOCK_DGRAM)
+serverSocket = socket(AF_INET, SOCK_DGRAM)  # UDP CONNECTION
 
 serverSocket.bind(SERVER_ADDRESS)
 print("The server is ready to receive")

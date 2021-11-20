@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb214029-6f8a-4087-96aa-965e7d281cf8" name="Changes" comment="Exercise 5 server-client classes">
-      <change afterPath="$PROJECT_DIR$/Assignment 3/HelloWorld.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment 3/Optional" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment 3/WebServer.py" afterDir="false" />
+    <list default="true" id="bb214029-6f8a-4087-96aa-965e7d281cf8" name="Changes" comment="Simple Working Hello World WebServer">
+      <change afterPath="$PROJECT_DIR$/Assignment 3/ClientA.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment 3/ClientB.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment 3/ThreadedServer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment 3/HelloWorld.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 3/HelloWorld.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment 3/WebServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 3/WebServer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise 5/src/UDPServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise 5/src/UDPServer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -39,7 +42,70 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.ThreadedServer">
+    <configuration name="ClientA" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Computer-Networking" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment 3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assignment 3/ClientA.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ClientB" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Computer-Networking" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment 3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assignment 3/ClientB.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ThreadedServer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Computer-Networking" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment 3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assignment 3/ThreadedServer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="WebServer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Computer-Networking" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -63,6 +129,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ThreadedServer" />
+        <item itemvalue="Python.ClientB" />
+        <item itemvalue="Python.ClientA" />
         <item itemvalue="Python.WebServer" />
       </list>
     </recent_temporary>
@@ -83,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637056131834</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Simple Working Hello World WebServer">
+      <created>1637058591858</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1637058591858</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -96,9 +172,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Exercise 5 server-client classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Exercise 5 server-client classes" />
+    <MESSAGE value="Simple Working Hello World WebServer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Simple Working Hello World WebServer" />
   </component>
 </project>
