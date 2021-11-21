@@ -2,6 +2,8 @@ import socket
 from threading import Thread
 
 
+# TODO: use select library
+
 # TCP Server Socket Thread Pool
 class ServerThread(Thread):
 

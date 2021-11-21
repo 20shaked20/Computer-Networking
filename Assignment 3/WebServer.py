@@ -15,7 +15,7 @@ while True:
     print('Ready to serve...')
     connectionSocket, addr = serverSocket.accept()  # obtaining established connection from the backlog queue.
     try:
-        message = connectionSocket.recv(5000).decode()  # decoding the message to bits.
+        message = connectionSocket.recv(2048).decode()  # decoding the message to bits.
         filename = message.split()[1]
         f = open(filename[1:])
 
@@ -24,7 +24,7 @@ while True:
         outputdata.append("HTTP/1.1 200 OK\r\n")
         outputdata.append("Content-Type: text/html; charset=utf-8\r\n")
         outputdata.append("\r\n")
-        outputdata.append("<html><body>Hello World</body></html>\r\n\r\n")
+        outputdata.append("<html><body>Hello World, fuck you!</body></html>\r\n\r\n")
 
         for i in range(0, len(outputdata)):  # can use also send all instead, right now for this project using this.
             connectionSocket.send(outputdata[i].encode())  # encoding bits to real language.
@@ -33,7 +33,8 @@ while True:
         connectionSocket.close()
     except IOError:
         # Send response message for file not found
-        print("\n 404 Not Found")
+        error = input("HTTP/1.1 404 Not Found\r\n")
+        connectionSocket.send(error.encode())  # sending the error code to the client.
 # Close client socket
 # Fill in start
 # Fill in end

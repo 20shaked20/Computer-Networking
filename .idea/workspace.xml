@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb214029-6f8a-4087-96aa-965e7d281cf8" name="Changes" comment="Simple Working Hello World WebServer">
-      <change afterPath="$PROJECT_DIR$/Assignment 3/ClientA.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment 3/ClientB.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment 3/ThreadedServer.py" afterDir="false" />
+    <list default="true" id="bb214029-6f8a-4087-96aa-965e7d281cf8" name="Changes" comment="Started working on threaded server">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 3/HelloWorld.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 3/HelloWorld.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment 3/ThreadedServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 3/ThreadedServer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment 3/WebServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 3/WebServer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise 5/src/UDPServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise 5/src/UDPServer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +38,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ThreadedServer">
+  <component name="RunManager" selected="Python.WebServer">
     <configuration name="ClientA" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Computer-Networking" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -129,10 +125,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ThreadedServer" />
+        <item itemvalue="Python.WebServer" />
         <item itemvalue="Python.ClientB" />
         <item itemvalue="Python.ClientA" />
-        <item itemvalue="Python.WebServer" />
+        <item itemvalue="Python.ThreadedServer" />
       </list>
     </recent_temporary>
   </component>
@@ -159,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637058591858</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Started working on threaded server">
+      <created>1637419491586</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1637419491586</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -177,6 +180,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Exercise 5 server-client classes" />
     <MESSAGE value="Simple Working Hello World WebServer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Simple Working Hello World WebServer" />
+    <MESSAGE value="Started working on threaded server" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started working on threaded server" />
   </component>
 </project>
