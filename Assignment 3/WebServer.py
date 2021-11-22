@@ -20,21 +20,28 @@ while True:
         f = open(filename[1:])
 
         # sending a basic message to our client, including HTTP Header :
-        outputdata = []
-        outputdata.append("HTTP/1.1 200 OK\r\n")
-        outputdata.append("Content-Type: text/html; charset=utf-8\r\n")
-        outputdata.append("\r\n")
-        outputdata.append("<html><body>Hello World, fuck you!</body></html>\r\n\r\n")
+        output_data = []
+        output_data.append("HTTP/1.1 200 OK\r\n")
+        output_data.append("Content-Type: text/html; charset=utf-8\r\n\r\n")
+        output_data.append("<html><body>Hello World</body></html>\r\n\r\n")
 
-        for i in range(0, len(outputdata)):  # can use also send all instead, right now for this project using this.
-            connectionSocket.send(outputdata[i].encode())  # encoding bits to real language.
+        for i in range(0, len(output_data)):  # can use also send all instead, right now for this project using this.
+            connectionSocket.send(output_data[i].encode())  # encoding bits to real language.
         connectionSocket.send("\r\n".encode())  # encoding bits to real language.
 
         connectionSocket.close()
     except IOError:
         # Send response message for file not found
-        error = input("HTTP/1.1 404 Not Found\r\n")
-        connectionSocket.send(error.encode())  # sending the error code to the client.
+        # the idea below is like the above, sending an error message if the name server is incorrect.
+        error_data = []
+        error_data.append('HTTP/1.1 404 Not Found\r\n')
+        error_data.append('Content-Type: text/html\r\n\r\n')
+        error_data.append('<html><head></head><body>404 Not Found</body></html>')
+        for i in range(0, len(error_data)):  # can use also send all instead, right now for this project using this.
+            connectionSocket.send(error_data[i].encode())  # encoding bits to real language.
+        connectionSocket.send("\r\n".encode())  # encoding bits to real language.
+
+        connectionSocket.close()
 # Close client socket
 # Fill in start
 # Fill in end

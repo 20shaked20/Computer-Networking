@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb214029-6f8a-4087-96aa-965e7d281cf8" name="Changes" comment="Started working on threaded server">
+    <list default="true" id="bb214029-6f8a-4087-96aa-965e7d281cf8" name="Changes" comment="Almost done with TCP WEB. threads working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment 3/ThreadedServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 3/ThreadedServer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment 3/WebServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 3/WebServer.py" afterDir="false" />
@@ -38,7 +38,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.WebServer">
+  <component name="RunManager" selected="Python.ThreadedServer">
     <configuration name="ClientA" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Computer-Networking" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,10 +125,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ThreadedServer" />
+        <item itemvalue="Python.ClientA" />
         <item itemvalue="Python.WebServer" />
         <item itemvalue="Python.ClientB" />
-        <item itemvalue="Python.ClientA" />
-        <item itemvalue="Python.ThreadedServer" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637419491586</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Almost done with TCP WEB. threads working">
+      <created>1637525123212</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1637525123212</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -181,6 +188,7 @@
     <MESSAGE value="Exercise 5 server-client classes" />
     <MESSAGE value="Simple Working Hello World WebServer" />
     <MESSAGE value="Started working on threaded server" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started working on threaded server" />
+    <MESSAGE value="Almost done with TCP WEB. threads working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Almost done with TCP WEB. threads working" />
   </component>
 </project>
