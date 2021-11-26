@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb214029-6f8a-4087-96aa-965e7d281cf8" name="Changes" comment="Almost done with TCP WEB. threads working">
+    <list default="true" id="bb214029-6f8a-4087-96aa-965e7d281cf8" name="Changes" comment="Assignment 3 done, bonus is almost finished also.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment 3/ClientA.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment 3/ClientB.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment 3/ThreadedServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 3/ThreadedServer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment 3/WebServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 3/WebServer.py" afterDir="false" />
     </list>
@@ -15,12 +17,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="HTML4 File" />
         <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="2" />
   </component>
   <component name="ProjectId" id="20zmxBLIQByDib5jNv5SrYabB2x" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -29,7 +35,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="DefaultHtmlFileTemplate" value="HTML4 File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
@@ -126,9 +132,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.ThreadedServer" />
+        <item itemvalue="Python.ClientB" />
         <item itemvalue="Python.ClientA" />
         <item itemvalue="Python.WebServer" />
-        <item itemvalue="Python.ClientB" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637525123212</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Assignment 3 done, bonus is almost finished also.">
+      <created>1637568903535</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1637568903535</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,6 +202,7 @@
     <MESSAGE value="Simple Working Hello World WebServer" />
     <MESSAGE value="Started working on threaded server" />
     <MESSAGE value="Almost done with TCP WEB. threads working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Almost done with TCP WEB. threads working" />
+    <MESSAGE value="Assignment 3 done, bonus is almost finished also." />
+    <option name="LAST_COMMIT_MESSAGE" value="Assignment 3 done, bonus is almost finished also." />
   </component>
 </project>

@@ -5,18 +5,19 @@ import sys  # In order to terminate the program
 
 class ServerThread(Thread):  # Creating the thread class.
 
-    def __init__(self, ip: int, port: int):
+    def __init__(self, ip: int, port: int, socket):
         Thread.__init__(self)
         self.ip = ip
         self.port = port
-        print("Added new socket thread for -> " + str(ip) + ":" + str(port))
+        self.socket = socket
+        print("[+] New Socket -> " + str(ip) + ":" + str(port))
 
     def run(self):
         while True:
             print('Ready to serve...')
             tcp_connection, addr = tcp_server_socket.accept()  # obtaining established connection from the backlog queue.
             try:
-                message = tcp_connection.recv(2048).decode()  # decoding the message to bits.
+                message = tcp_connection.recv(1024).decode()  # decoding the message to bits.
                 filename = message.split()[1]
                 f = open(filename[1:])
 
@@ -32,6 +33,8 @@ class ServerThread(Thread):  # Creating the thread class.
                 tcp_connection.send("\r\n".encode())  # encoding bits to real language.
 
                 tcp_connection.close()
+                break
+
             except IOError:
                 # Send response message for file not found
                 # the idea below is like the above, sending an error message if the name server is incorrect.
@@ -43,24 +46,22 @@ class ServerThread(Thread):  # Creating the thread class.
                                len(error_data)):  # can use also send all instead, right now for this project using this.
                     tcp_connection.send(error_data[i].encode())  # encoding bits to real language.
                 tcp_connection.send("\r\n".encode())  # encoding bits to real language.
-
                 tcp_connection.close()
+                break
 
 
-TCP_address = '127.0.0.1'
-TCP_port = 12000
+if __name__ == '__main__':
 
-tcp_server_socket = socket(AF_INET, SOCK_STREAM)
-tcp_server_socket.bind((TCP_address, TCP_port))
-threads = []
+    TCP_address = '127.0.0.1'
+    TCP_port = 12000
 
-while True:
-    tcp_server_socket.listen(4)  # up to 4 clients can connect
+    tcp_server_socket = socket(AF_INET, SOCK_STREAM)
+    tcp_server_socket.bind((TCP_address, TCP_port))
+
     print("Waiting for connections from TCP clients...")
-    (tcp_connection, (ip, port)) = tcp_server_socket.accept()
-    new_thread = ServerThread(ip, port)  # init a thread
-    new_thread.start()  # start the thread.
-    threads.append(new_thread)
+    tcp_server_socket.listen(4)  # up to 4 clients can connect
+    while True:
+        tcp_connection, (ip, port) = tcp_server_socket.accept()
+        new_thread = ServerThread(ip, port, tcp_server_socket)  # init a thread
+        new_thread.run()  # run the thread.
 
-# for t in threads:
-#     t.join()

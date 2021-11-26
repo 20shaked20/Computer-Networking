@@ -8,7 +8,7 @@ serverPort = 12000  # server port, basic one
 SERVER_ADDRESS = ('127.0.0.1', serverPort)  # creating server address
 
 serverSocket.bind(SERVER_ADDRESS)  # binding the server
-serverSocket.listen(10)  # listen to 10 clients connection.
+serverSocket.listen(1)  # listen to 10 clients connection.
 
 while True:
     # Establish the connection
@@ -42,8 +42,7 @@ while True:
         connectionSocket.send("\r\n".encode())  # encoding bits to real language.
 
         connectionSocket.close()
-# Close client socket
-# Fill in start
-# Fill in end
+
+
 serverSocket.close()
 sys.exit()  # Terminate the program after sending the corresponding data
