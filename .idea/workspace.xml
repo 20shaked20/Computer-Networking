@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb214029-6f8a-4087-96aa-965e7d281cf8" name="Changes" comment="Assignment 3 done, bonus is almost finished also.">
+    <list default="true" id="bb214029-6f8a-4087-96aa-965e7d281cf8" name="Changes" comment="Threaded Server working">
+      <change afterPath="$PROJECT_DIR$/Assignment 3/cat.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 3/ClientA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 3/ClientB.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment 3/HelloWorld.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 3/HelloWorld.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment 3/ThreadedServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 3/ThreadedServer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment 3/WebServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 3/WebServer.py" afterDir="false" />
     </list>
@@ -41,10 +41,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Assignment 3" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ThreadedServer">
+  <component name="RunManager" selected="Python.WebServer">
     <configuration name="ClientA" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Computer-Networking" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -131,10 +132,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.WebServer" />
         <item itemvalue="Python.ThreadedServer" />
         <item itemvalue="Python.ClientB" />
         <item itemvalue="Python.ClientA" />
-        <item itemvalue="Python.WebServer" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637568903535</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Threaded Server working">
+      <created>1637942966614</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1637942966614</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -203,6 +211,7 @@
     <MESSAGE value="Started working on threaded server" />
     <MESSAGE value="Almost done with TCP WEB. threads working" />
     <MESSAGE value="Assignment 3 done, bonus is almost finished also." />
-    <option name="LAST_COMMIT_MESSAGE" value="Assignment 3 done, bonus is almost finished also." />
+    <MESSAGE value="Threaded Server working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Threaded Server working" />
   </component>
 </project>
