@@ -1,3 +1,4 @@
+import threading
 from socket import *
 from threading import Thread  # threads usage
 import sys  # In order to terminate the program
@@ -8,6 +9,7 @@ counter = 0
 class ServerThread(Thread):  # Creating the thread class.
 
     def __init__(self, ip: int, port: int, socket):
+        # this method init a new thread, and starts a new socket connection for a new client
         Thread.__init__(self)
         self.ip = ip
         self.port = port
@@ -50,10 +52,8 @@ class ServerThread(Thread):  # Creating the thread class.
                 tcp_connection.close()
                 break
 
-
 if __name__ == '__main__':
 
-    TCP_address = '127.0.0.1'
     TCP_port = 12000
 
     tcp_server_socket = socket(AF_INET, SOCK_STREAM)
@@ -65,6 +65,6 @@ if __name__ == '__main__':
         tcp_connection, (ip, port) = tcp_server_socket.accept()
         new_thread = ServerThread(ip, port, tcp_server_socket)  # init a thread
         new_thread.run()  # run the thread.
-        # if counter == 4:
-        #     print("Server is shutting done, 4 threads used.")
-        #     break
+        if counter == 4:
+            print("Server is shutting done, 4 threads used.")
+            break

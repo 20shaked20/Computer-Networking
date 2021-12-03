@@ -8,7 +8,7 @@ serverPort = 12000  # server port, basic one
 SERVER_ADDRESS = ('', serverPort)  # creating server address
 
 serverSocket.bind(SERVER_ADDRESS)  # binding the server
-serverSocket.listen(1)  # listen to 10 clients connection.
+serverSocket.listen(1)  # listen to 1 client
 
 while True:
     # Establish the connection
@@ -35,7 +35,7 @@ while True:
         error_data = []
         error_data.append('HTTP/1.1 404 Not Found\r\n')
         error_data.append('Content-Type: text/html\r\n\r\n')
-        error_data.append('<html><head></head><body>404 Not Found</body></html>')
+        error_data.append('<html><head></head><body>404 File Not Found</body></html>')
         for i in range(0, len(error_data)):  # can use also send all instead, right now for this project using this.
             connectionSocket.send(error_data[i].encode())  # encoding bits to real language.
         connectionSocket.send("\r\n".encode())  # encoding bits to real language.
